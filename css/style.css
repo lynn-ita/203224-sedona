@@ -1,14 +1,8 @@
 html,
 body {
-  min-width: 768px;
-  max-width: 1200px;
-  min-height: auto;
-  margin: 0;
-  padding: 0;
   font-family: PTSans;
   font-weight: bold;
-  text-transform: uppercase;
-}
+  }
 
 b.slogan {
   font-size: 21px;
@@ -63,30 +57,25 @@ p {
 }
 nav li {
   display: inline-block;
-  border: 1px solid red;
   width: 20%;
-}
-a.logo {
-  background-image: url(http://127.0.0.1:57223/img/Logo.png);
-  background-repeat: no-repeat;
-  width: 138px;
-  height: 70px;
-  display: block;
-  margin: auto;
-  position: relative;
+  vertical-align: middle;
 }
 
 
 .container {
-  padding: 0 6%;
+  min-width: 768px;
+  max-width: 1200px;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
   clear: both;
-}
+  text-transform: uppercase;
+  }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-
 
 .city-intro {
   background-color:green;
@@ -97,30 +86,29 @@ a.logo {
   background-repeat: no-repeat;
   background-color:lightblue;
   width: 100%;
-  height: 400px;  
+  height: 400px;
 }
 .city-intro .text {
    background-image: url(http://127.0.0.1:51590/img/bg-text.png);
    background-repeat: no-repeat;
    width: 458px; height:352px;
-   background-color:blue;
-   position: absolute; 
+   position: absolute;
    left: 26%; top: 5%;padding: 0 6%;
 }
 .city-info {
   width: 100%; height:100px;
   background-color:lightpink;
-  padding-top: 5%;} 
+  padding-top: 5%;}
 
 
-.block-1 {
+.index-block-1 {
   display: block;
   background-color:#81b3d2;
   float:left;
   width:33%;
   height:200px;
 }
-.photo-1 {
+.index-photo-1 {
    background-image:url( http://127.0.0.1:51590/img/real-town.jpg);
    background-repeat: no-repeat;
   display: block;
@@ -129,14 +117,14 @@ a.logo {
   width:67%;
   height:200px;
 }
-.block-2 {
+.index-block-2 {
   display: block;
   background-color:#81b3d2;
   float: right;
   width:33%;
   height:200px;
 }
-.photo-2 {
+.index-photo-2 {
   background-image:url(http://127.0.0.1:51590/img/devils-bridge.jpg);
   background-repeat: no-repeat;
   display: block;
@@ -156,7 +144,7 @@ a.logo {
 }
   .feature-3 {
     padding-right: 1%;
-}  
+}
 
 .sightseen-1,
 .sightseen-2,
@@ -186,6 +174,8 @@ a.logo {
 .filter-bg {
   background-image: url(http://127.0.0.1:57223/img/filter-bg.jpg);
   background-repeat: no-repeat;
+    width: 100%;
+    min-height: auto;
 }
 
 .facilities-inner {
@@ -193,7 +183,7 @@ a.logo {
   line-height: 21px;
   color: #ffffff;
   float: left;
-  margin-right: 6%;
+
 }
 .accomodation-inner {
   float: left;
@@ -236,7 +226,7 @@ label {
 
 article {
   border-top: 1px solid #e5e5e5;
-  padding: 3% 0; 
+  padding: 3% 0;
   clear: both;
 }
 .hotel-block-photo {
