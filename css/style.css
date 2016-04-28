@@ -1,15 +1,8 @@
 html,
 body {
-  font-family: PTSans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   }
-
-b.slogan {
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-}
-
 h2.title {
   font-size: 21px;
   line-height: 21px;
@@ -46,22 +39,31 @@ p {
   color: #333333
 }
 
-
-.main-header {
-  height: 56px;
-}
-.main-menu {
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
+/*ШАПКА*/
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 nav li {
   display: inline-block;
   width: 20%;
+  font-size: 14px;
+  line-height: 26px;
   vertical-align: middle;
 }
+nav a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+nav a:hover {
+display: block;
+color: #81b3d2;
+}
+/*ШАПКА*/
 
-
+/*КОНТЕЙНЕР*/
 .container {
   min-width: 768px;
   max-width: 1200px;
@@ -69,108 +71,97 @@ nav li {
   margin: 0;
   padding: 0;
   clear: both;
+  text-align: center;
   text-transform: uppercase;
   }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+}/*КОНТЕЙНЕР*/
 
-.city-intro {
-  background-color:green;
-  position: relative;
+/*ИНДЕКС*/
+.index-bg {
+ position:relative;
 }
-.city-intro .photo {
-  background-image: url(http://127.0.0.1:51590/img/bg-img2.jpg);
-  background-repeat: no-repeat;
-  background-color:lightblue;
+.index-bg .bg-photo {
+  background: url(img/bg-img2.jpg) no-repeat;
   width: 100%;
-  height: 400px;
+  height: 508px;
 }
-.city-intro .text {
-   background-image: url(http://127.0.0.1:51590/img/bg-text.png);
+.index-bg .bg-text {
+   background-image: url(img/bg-text.png);
    background-repeat: no-repeat;
-   width: 458px; height:352px;
+   width: 458px;
+   height:352px;
    position: absolute;
-   left: 26%; top: 5%;padding: 0 6%;
+   left: 50%; top: 50%;
+   margin-left: -230px;
+   margin-top: -176px;
 }
-.city-info {
-  width: 100%; height:100px;
-  background-color:lightpink;
-  padding-top: 5%;}
+.index-info {
+  text-align: center;
+  padding: 45px 0;
+}
+b.slogan {
+  display: block;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 35px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
 
 
-.index-block-1 {
-  display: block;
-  background-color:#81b3d2;
-  float:left;
-  width:33%;
-  height:200px;
+index-photo-left {
+    display: inline-block;
+    vertical-align: middle;
+    background-color:#81b372;
+     width:67%;
 }
-.index-photo-1 {
-   background-image:url( http://127.0.0.1:51590/img/real-town.jpg);
-   background-repeat: no-repeat;
-  display: block;
-  background-color:lightblue;
-  float:right;
-  width:67%;
-  height:200px;
-}
-.index-block-2 {
-  display: block;
-  background-color:#81b3d2;
-  float: right;
-  width:33%;
-  height:200px;
-}
-.index-photo-2 {
-  background-image:url(http://127.0.0.1:51590/img/devils-bridge.jpg);
-  background-repeat: no-repeat;
-  display: block;
-  background-color:lightblue;
-  float: left;
-  width:67%;
-  height:200px;
+index-block-left {
+    display: inline-block;
+    vertical-align: middle;
+    background-color:#81b372;
+     width:33%;
 }
 
 .feature-1,
 .feature-2,
 .feature-3 {
-  display: block;
-  background-color:yellow;
+ display: inline-block;
+ vertical-align: middle;
   width: 33%;
-  float: left;
+  height:330px;
+ padding-top: 50px;
 }
-  .feature-3 {
-    padding-right: 1%;
-}
-
 .sightseen-1,
 .sightseen-2,
 .sightseen-3{
-  display: block;
-  background-color:yellow;
-  float: left;
+  display: inline-block;
   width:33%;
-  height:200px;
-  }
-.sightseen-3 {
-  padding-right: 1%;
-}
+  height:260px;
+  vertical-align: middle;
+  padding-top: 50px ;
+  background-color:#eeeeee;
+  margin-left: -5px;
+ }
+
+
 .form {
   width: 100%;
-  height: 200px;
+  height: 290px;
   padding-top:5%;
   clear:both;
-  background-color:green;
 }
 .search-form {
   display: block;
   border: 1px solid black;
 }
+/*ИНДЕКС*/
 
-
+/*ИННЕР*/
 .filter-bg {
   background-image: url(http://127.0.0.1:57223/img/filter-bg.jpg);
   background-repeat: no-repeat;
@@ -178,13 +169,6 @@ nav li {
     min-height: auto;
 }
 
-.facilities-inner {
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  float: left;
-
-}
 .accomodation-inner {
   float: left;
   margin-left: 6%;
@@ -212,7 +196,6 @@ label {
   margin-right: -200px;
 }
 
-
  .sorter {
   font-size: 12px;
   font-weight: normal;
@@ -221,9 +204,10 @@ label {
 }
 .sorter li {
   display: inline-block;
+    vertical-align: middle;
 }
 
-
+/*Страница отелей*/
 article {
   border-top: 1px solid #e5e5e5;
   padding: 3% 0;
@@ -284,7 +268,7 @@ h3.hotel-title {
 }
 
 
-
+/*футер*/
 .main-footer {
   border-top: 1px solid #e5e5e5;
   height: 120px;
@@ -303,8 +287,6 @@ h3.hotel-title {
 }
 
 .footer-copyright {
-  background-image: url(http://127.0.0.1:60344/img/logo-htmlac.png);
-  background-repeat: no-repeat;
   float: right;
   padding: 30px;
 }
