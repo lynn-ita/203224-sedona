@@ -1,37 +1,7 @@
-html,
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   }
-h2.title {
-  font-size: 21px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.features h2 {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-}
-
-.city-sighteen h2 {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-}
-
-span.form-title {
-  font-size: 30px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.form h3 {
-  font-size: 14px;
-  line-height: 26px;
-  color: #ffffff;
-}
 p {
   font-size: 14px;
   font-weight: normal;
@@ -39,27 +9,39 @@ p {
   color: #333333
 }
 
+
 /*ШАПКА*/
-.main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  display: inline-block;
-  width: 20%;
-  font-size: 14px;
-  line-height: 26px;
-  vertical-align: middle;
-}
-nav a {
+
+ .navigation a {
   display: block;
   color: #000000;
   text-decoration: none;
+   padding-top: 18px;
+   padding-bottom: 18px;
+ }
+ .navigation ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ }
+ .navigation li {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center; /*почему неровные отступы у навигации слева и справа, должно быть 73px*/  position:relative;
 }
-nav a:hover {
+
+.navigation a:hover {
 display: block;
 color: #81b3d2;
+}
+.logo  {
+    position:absolute;
+    left: 20%;
+    z-index: 1;
+    top: -18px;
 }
 /*ШАПКА*/
 
@@ -68,8 +50,8 @@ color: #81b3d2;
   min-width: 768px;
   max-width: 1200px;
   min-height: auto;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   clear: both;
   text-align: center;
   text-transform: uppercase;
@@ -86,8 +68,8 @@ color: #81b3d2;
 }
 .index-bg .bg-photo {
   background: url(img/bg-img2.jpg) no-repeat;
-  width: 100%;
-  height: 508px;
+  min-width: 100%;
+  min-height: 508px;
 }
 .index-bg .bg-text {
    background-image: url(img/bg-text.png);
@@ -96,59 +78,106 @@ color: #81b3d2;
    height:352px;
    position: absolute;
    left: 50%; top: 50%;
-   margin-left: -230px;
+   margin-left: -240px;
    margin-top: -176px;
 }
 .index-info {
   text-align: center;
-  padding: 45px 0;
+  margin: 45px 350px;
 }
 b.slogan {
   display: block;
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
-
-
-index-photo-left {
-    display: inline-block;
-    vertical-align: middle;
-    background-color:#81b372;
-     width:67%;
+.index-photo {
+   display: inline-block;
+   vertical-align: top;
+   background-color:#81b3d2;
+   width: 67%;
+   height:255px; <!-->откуда взялся отступ у второй картинки?<--!>
 }
-index-block-left {
+.index-block {
     display: inline-block;
-    vertical-align: middle;
-    background-color:#81b372;
-     width:33%;
+    vertical-align: top;
+    background-color:#81b3d2;
+    width:33%;
+    height:255px;
+    margin: 0 -5px;
 }
-
+.index-block .title {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px 100px 28px;
+}
+.index-block span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+}
+.index-block p {
+  color: #ffffff;
+  margin: 28px 60px;
+}
+.features{
+font-size: 0;
+}
 .feature-1,
 .feature-2,
 .feature-3 {
  display: inline-block;
- vertical-align: middle;
-  width: 33%;
-  height:330px;
- padding-top: 50px;
+ vertical-align: top;
+ width: 33%;
+ margin-top: 57px;
+ margin-bottom: 70px;
+ }
+.features h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  padding: 27px 0;
+    margin:0px;
+}
+.features p {
+    padding: 0px 50px;
+    margin: 0;
+}
+.city-sighteen {
+    font-size: 0;
 }
 .sightseen-1,
 .sightseen-2,
 .sightseen-3{
   display: inline-block;
-  width:33%;
-  height:260px;
-  vertical-align: middle;
-  padding-top: 50px ;
-  background-color:#eeeeee;
-  margin-left: -5px;
+  width: 33%;
+  height: 260px;
+  vertical-align: top;
+  background-color:#eeeeee; <!-->как заполнить отпкрывшийся промежуток?<--!>
  }
+.city-sighteen h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+ margin: 50px 120px 30px;2
+}
+.city-sighteen span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #333333
+}
+.city-sighteen  p {
+  margin: 28px 60px;
+}
 
-
+/*ИНДЕКС*/
+/*ФОРМА ПОИСКА*/
 .form {
   width: 100%;
   height: 290px;
@@ -159,134 +188,21 @@ index-block-left {
   display: block;
   border: 1px solid black;
 }
-/*ИНДЕКС*/
-
-/*ИННЕР*/
-.filter-bg {
-  background-image: url(http://127.0.0.1:57223/img/filter-bg.jpg);
-  background-repeat: no-repeat;
-    width: 100%;
-    min-height: auto;
+span.form-title {
+  font-size: 30px;
+  line-height: 24px;
+    color: #000000;
 }
-
-.accomodation-inner {
-  float: left;
-  margin-left: 6%;
-   font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-}
-label {
-  display: list-item;
-  list-style: none;
-  padding-bottom: 33px;
+.form h3 {
   font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.price-box {
-  border: 1px solid white;
-  float: right;
-  padding: 10px 60px;
-  margin-top: 33px;
-}
-.filter-btn {
-  float: right;
-  margin-top: 150px;
-  margin-right: -200px;
-}
-
- .sorter {
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #000000
-}
-.sorter li {
-  display: inline-block;
-    vertical-align: middle;
-}
-
-/*Страница отелей*/
-article {
-  border-top: 1px solid #e5e5e5;
-  padding: 3% 0;
-  clear: both;
-}
-.hotel-block-photo {
-   float: left;
-   margin-right: 3%;
-}
-.hotel-block-info {
-  float: left;
-}
-h3.hotel-title {
-  font-size: 21px;
   line-height: 26px;
-  color: #000000;
-  margin: -5px;
+  color: #ffffff;
 }
-.hotel-block-rate{
-  border: 1px solid red;
-  float:right;
+.form p {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
-  color: #666666
-}
-.photo-1 {
-  background-image: url(http://127.0.0.1:57223/img/hotel1.jpg);
-  background-repeat: no-repeat;
-  width: 135px;
-  height: 90px;
-}
-.photo-2 {
-  background-image: url(http://127.0.0.1:57223/img/hotel2.jpg);
-  background-repeat: no-repeat;
-  width: 135px;
-  height: 90px;
-}
-.photo-3 {
-  background-image: url(http://127.0.0.1:57223/img/hotel3.jpg);
-  background-repeat: no-repeat;
-  width: 135px;
-  height: 90px;
-}
-.hotel-btn-more {
-  background-color: #81b3d2;
-  color: #ffffff;
-  width: 110px;
-  height: 28px;
-  padding: 8px 12px;
-}
-.hotel-btn-book {
-  background-color: #766357;
-  color: #ffffff;
-  width: 110px;
-  height: 28px;
-  padding: 8px 12px;
-}
-
-
-/*футер*/
-.main-footer {
-  border-top: 1px solid #e5e5e5;
-  height: 120px;
-  padding: 51px 70px;
-}
-
-.footer-hashtag a {
-  display: block;
-  float: left;
-  color: #000000;
-  padding-right: 250px;
-}
-
-.footer-social {
-  float: left;
-}
-
-.footer-copyright {
-  float: right;
-  padding: 30px;
-}
+  color: #333333;
+    margin: 28px 400px; <!-->как разбить на две строки?<--!>
+ }
+/*ФОРМА ПОИСКА*/
