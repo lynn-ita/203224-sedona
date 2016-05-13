@@ -136,7 +136,7 @@ background:#81b3d2 url(../img/real-town.jpg) no-repeat;
   vertical-align: top;
   text-align: center;
 
-  width:34%;
+  width:33%;
   height:255px;
 
   background-color:#81b3d2;
@@ -384,19 +384,24 @@ li:nth-child(5) {
 
 .index-photo {
   display: inline-block;
+
   vertical-align: top;
   background-color:#81b3d2;
+
+
   width: 67%;
   height:255px;
 }
 
 .town {
-background:#81b3d2 url(../img/real-town.jpg) no-repeat;
+  background:url(../img/real-town.jpg) no-repeat;
+  background-size:cover;
 }
 
  .bridge {
-    background:#81b3d2 url(../img/devils-bridge.jpg) no-repeat;
-}/*как убрать этот ужасный пробел?*/
+    background: url(../img/devils-bridge.jpg) no-repeat;
+    background-size:cover;
+}
 
 .index-block {
   display: inline-block;
@@ -405,7 +410,7 @@ background:#81b3d2 url(../img/real-town.jpg) no-repeat;
   text-align: center;
 
   width:33%;
-  height:255px;
+  min-height:255px;
 
   background-color:#81b3d2;
 }
@@ -418,8 +423,8 @@ background:#81b3d2 url(../img/real-town.jpg) no-repeat;
   vertical-align: top;
 
   margin-top: 50px;
-  margin-left: 142px;
-  margin-right:150px;
+  margin-left: 122px;
+  margin-right:123px;
 }
 
 .index-block span {
@@ -432,7 +437,7 @@ background:#81b3d2 url(../img/real-town.jpg) no-repeat;
 .index-block p {
   color: #ffffff;
 
-  margin: 18px 46px;
+  margin: 18px 50px;
 }
 
 .features {
@@ -481,7 +486,7 @@ background:#81b3d2 url(../img/real-town.jpg) no-repeat;
   vertical-align: top;
 
   width: 33%;
-  height: 260px;
+  min-height: 260px;
 }
 
 .city-sighteen h2 {
@@ -547,7 +552,7 @@ p {
   color: #ffffff;
   text-align: center;
 
-  min-width:  568px;
+  min-width:  570px;
   min-height: auto;
 
   padding: 30px 0;
@@ -563,11 +568,11 @@ p {
     transform: translate(-50%);
     z-index: 2;
 
-    min-width: 454px;
+    width: 454px;
     min-height:280px;
 
     margin: 0 auto;
-    padding: 55px;
+    padding: 58px;
 
     font-size: 14px;
     line-height: 26px;
@@ -575,72 +580,94 @@ p {
     background-color: #ffffff;
     box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
+/*форма*/
 
-.field-date {
+
+.date {
    display: block;
    clear:both;
-   text-align:right;
+   text-align:right ;
 }
 
-.field-date label {
+ .date label {
    float:left;
-   padding-right: 10px;
+   padding-right: 15px;
+   padding-top: 6px;
 }
-.popup-form .main {
-  float:left;
-}
-input[type="date"]{
+
+.field-date input[type="text"]{
     font-size: 14px;
     line-height: 26px;
+    font-weight: bold;
     color: #333333;
+    text-transform: uppercase;
 
     width: 66%;
-    height: 37px;
-
-
-    margin-bottom:30px;
-    padding-left:10px;
-    padding-right: 30px;
+    height: 33px;
 
     border: none;
     background-color: #f2f2f2;
+
+    margin-bottom: 30px;
 }
 
-.field-number.adults{
-  display: block;
-  float: left;
-  text-align:left;
-
-}
-.field-number.childrens {
-  display: block;
-  float: right;
-  text-align:left;
+.field-date {
+    background-color: #f2f2f2;
+    padding-top:10px;
+    padding-left: 9px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
-.field-number label{
-  padding-right: 30px;
-}
+.form-fields  {
+    display: inline-block;
+    vertical-align: top;
 
-input[type="number"]{
     font-size: 14px;
     line-height: 26px;
     color: #333333;
+    text-transform: uppercase;
 
-    width: 20%;
-    height: 37px;
+    margin-bottom: 30px;
+ }
 
-    margin-bottom:30px;
-    padding: 0 25px;
+.field-adults input[type="text"],
+.field-children input[type="text"] {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+
+    width: 15%;
+    height: 33px;
 
     border: none;
     background-color: #f2f2f2;
+ }
+.field-adults{
+    padding: 10px 20px ;
+    background-color: #f2f2f2;
+  margin-left:37px;
+}
+.field-children {
+  padding: 10px 20px;
+    background-color: #f2f2f2;
+  margin-left: 30px;
+}
+.form-fields.left{
+  width: 50%;
+}
+.form-fields.right {
+width: 49%;
+text-align: right;
 }
 
 input[type="submit"] {
     font-size: 21px;
     line-height: 26px;
-    color: #fff;
+    font-weight: bold;
+    color: #ffffff;
     text-transform: uppercase;
 
     margin: 22px 0;
@@ -649,17 +676,14 @@ input[type="submit"] {
     border: none;
     background-color: #81b3d2;
 }
-
-
+/*форма*/
 
 /*АКТИВНЫЕ КНОПКИ */
-input[type="date"]:hover,
-input[type="number"]:hover {
+input[type="text"]:hover{
     background-color:  #ebebeb;
 }
 
-input[type="date"]:active,
-input[type="number"]:active {
+input[type="text"]:active {
     background-color:  #ffffff;
 }
 
@@ -2150,8 +2174,12 @@ input[type="submit"]:active {
   background-position: -10px -111px;
 } /*как повесить ховер на логотип?*/
 
-.copyright:active {
-  opacity: 0.3;
+.copyright:active::before   {
+  width: 113px;
+  height: 39px;
+
+  background-position: -40px -52px;
+    opacity: 0.7;
 }
 /*ЗВЕЗДЫ*/
 .raiting {
