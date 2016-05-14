@@ -272,19 +272,23 @@ p {
 /*БЛОК ПРОМО*/
 
 /*ФОРМА ПОИСКА*/
-.modal-content .popup {
-  display: block;
+.modal-content  {
   position: relative;
+
+}
+.modal-content .popup{
+  display: block;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform:uppercase;
+  text-decoration: none;
 
   color: #ffffff;
   text-align: center;
 
-  min-width:  570px;
+  width:  570px;
   min-height: auto;
 
   padding: 30px 0;
@@ -292,13 +296,16 @@ p {
 
   border:none;
   background-color: #766357;
+
+
  }
 
 .popup-form {
+    display: none;
+
     position:absolute;
-    left:50%;
-    transform: translate(-50%);
-    z-index: 2;
+    left:26.4%;
+    z-index: 1;
 
     width: 454px;
     min-height:280px;
@@ -311,6 +318,20 @@ p {
 
     background-color: #ffffff;
     box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.popup-form-show{
+    display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-80px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 /*форма*/
 
@@ -381,7 +402,7 @@ p {
 .field-adults{
     padding: 10px 30px;
     background-color: #f2f2f2;
-    margin-left:35px;
+    margin-left:45px;
 }
 .field-children {
   padding: 10px 40px;
@@ -439,7 +460,7 @@ input[type="submit"]:active {
   display: block;
   position: absolute;
   top:25%;
-  left:91%;
+  left:90%;
   background:url(../img/spritesheet.png) no-repeat;
 
   width: 22px;
@@ -1154,9 +1175,10 @@ input[type="submit"]:active {
   background-color: #669ec0;
 }
 
-.social-btn:active {
-  background-color: #5496bd;
+.social-btn:active::before  {
+  opacity: 0.3;
 }
+
 
 .copyright {
   position: relative;
