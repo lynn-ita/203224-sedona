@@ -15,7 +15,6 @@ body {
 .navigation ul {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -114,7 +113,7 @@ body {
     margin-top: 60px;
     margin-left: 339px;
     margin-right: 338px;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
 }
 
 .slogan {
@@ -135,9 +134,8 @@ body {
     vertical-align: top;
     background-color: #81b3d2;
 
-
     width: 67%;
-    height: 256px;
+    min-height: 256px;
 }
 
 .town {
@@ -170,9 +168,9 @@ body {
     vertical-align: top;
 
     margin-top: 55px;
-    margin-left: 122px;
-    margin-right: 123px;
-    margin-bottom: 28px;
+    margin-left: 121px;
+    margin-right: 124px;
+    margin-bottom: 23px;
 }
 
 .index-block span {
@@ -189,11 +187,11 @@ body {
 }
 
 .features {
-    margin-top: 61px;
-    margin-bottom: 85px;
+    margin-top: 56px;
+    margin-bottom: 82px;
 
     text-align: center;
-font-size: 0;
+
     background-color: #ffffff;
 }
 
@@ -202,8 +200,9 @@ font-size: 0;
 .feature-3 {
     display: inline-block;
 
-    vertical-align: top;
+    vertical-align: bottom;
 
+    font-size: 0;
 
     width: 33%;
  }
@@ -246,10 +245,10 @@ font-size: 0;
     line-height: 21px;
     color: #000000;
 
-    margin-top: 48px;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom:     22px;
+    margin-top: 47px;
+    margin-left: 118px;
+    margin-right: 119px;
+    margin-bottom: 22px;
 }
 
 .extra {
@@ -260,7 +259,7 @@ font-size: 0;
 }
 
 .city-sighteen  p {
-    margin: 22px 55px;
+    margin: 22px 67px;
 }
 
 p {
@@ -276,8 +275,8 @@ p {
 
     background-color: #ffffff;
 
-    padding-top: 52px;
-    padding-bottom: 20px;
+    padding-top: 54px;
+    padding-bottom: 18px;
 }
 
 .promo-title {
@@ -314,7 +313,7 @@ p {
     color: #ffffff;
     text-align: center;
 
-    width: 570px;
+    width: 568px;
     min-height: auto;
 
     padding: 30px 0;
@@ -329,11 +328,11 @@ p {
 
     position: absolute;
     left: 50%;
-    margin-left: -285px;
+    margin-left: -284px;
     width: 454px;
     min-height: 280px;
 
-    padding: 58px;
+    padding: 53px 57px;
 
     font-size: 14px;
     line-height: 26px;
@@ -382,7 +381,7 @@ p {
 .field-date label {
     float: left;
     padding-right: 15px;
-    padding-top: 6px;
+    padding-top: 9px;
 }
 
  input[type="text"]{
@@ -392,7 +391,7 @@ p {
     color: #333333;
     text-transform: uppercase;
 
-    height: 30px;
+    height: 28px;
 
     background-color: #f2f2f2;
 
@@ -442,14 +441,14 @@ p {
 .field-adults{
     background-color: #f2f2f2;
 
-    padding: 10px 40px;
-    margin-left: 38px;
+    padding: 10px 37px;
+    margin-left: 35px;
 }
 .field-children {
     background-color: #f2f2f2;
 
-    padding: 10px 40px;
-    margin-left: 25px;
+    padding: 10px 38px;
+    margin-left: 21px;
 }
 
 .form-fields.left{
@@ -472,7 +471,7 @@ input[type="submit"] {
     border: none;
 
     margin-top: 24px;
-    padding: 15px 194px;
+    padding: 16px 196px;
 }
 
 
@@ -505,8 +504,8 @@ input[type="submit"]:active {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+    -webkit-transform: translate(-19%,-47%);
+            transform: translate(-19%,-47%);
 
     background:url(../img/spritesheet.png) no-repeat;
 
@@ -538,7 +537,7 @@ input[type="submit"]:active {
     display: block;
 
     position: absolute;
-    top:50%;
+    top:47%;
     left:10%;
 
     background:url(../img/spritesheet.png) no-repeat;
@@ -564,8 +563,8 @@ input[type="submit"]:active {
     display: block;
 
     position: absolute;
-    top: 39%;
-    left: 75%;
+    top: 35%;
+    left: 79%;
 
     background:url(../img/spritesheet.png) no-repeat;
 
@@ -1050,24 +1049,56 @@ iframe {
  }
 
 /*Footer*/
+
 .main-footer {
-    position: relative;
+  margin-top: -120px;
+  padding-top: 34px;
+  padding-bottom: 36px;
 
-    margin: 0 6%;
-    margin: -120px auto 0 auto;
-    padding-top: 35px;
-    padding-bottom: 35px;
+  opacity: 0.9;
+  background-color: #ffffff;
+}
 
-    background-color: #ffffff;
-    opacity: 0.9;
+.footer-hashtag{
+    display:inline-block;
+
+    vertical-align: middle;
+
+    min-width: 33%;
+    text-align: center;
+    font-size: 0;
+
+}
+
+.footer-hashtag a {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-social{
+    display:inline-block;
+
+    vertical-align: middle;
+    text-align: center;
+    min-width: 33%;
+}
+
+.footer-copyright {
+    display:inline-block;
+
+    vertical-align: middle;
+    min-width: 33%;
+    text-align: center;
+    padding-top: 11px;
 }
 .inner-page .main-footer {
-    margin: 0 6%;
-
-    background-color: #ffffff;
+    margin-top: 0;
 }
 
-.footer-hashtag {
+
+/* .footer-hashtag {
     display:inline-block;
 
     vertical-align: middle;
@@ -1075,10 +1106,11 @@ iframe {
     font-size: 21px;
     line-height: 26px;
 
+
     min-width: 33%;
 
 }
-.footer-hashtag a{
+footer-hashtag a{
     padding-left: 61px;
 }
 .footer-social {
@@ -1110,7 +1142,7 @@ iframe {
     color: #000000;
     text-decoration: none;
 }
-
+ */
 /*Sprite */
 .sprite {
     display: block;
