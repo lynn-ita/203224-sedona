@@ -3,36 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="inner-page">
-        <header class="main-header">
-            <div class="container">
-                <nav class="navigation">
-                    <ul><li>
-                            <a href="#">Информация</a>
-                        </li
-                        ><li>
-                            <a href="#">Фото и Видео</a>
-                        </li
-                        ><li>
-                        <div class="main-menu-logo">
-                            <a href="#">
-                                <img src="img/logo.png" width="139" height="70"  alt="City of Sedona">
-                            </a>
-                        </div>
-                        </li
-                        ><li>
-                            <a href="#">Карта штата</a>
-                        </li
-                        ><li>
-                            <a href="#">Гостиницы</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="main-header">
+        <div class="container">
+            <a class="main-menu-logo" href="http://127.0.0.1:50192/index.html">
+                <img src="img/logo.png" width="139" height="70"  alt="City of Sedona">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li
+                    ><li>
+                        <a href="#">Фото и Видео</a>
+                    </li
+                    ><li>
+                        <a href="#">Карта штата</a>
+                    </li
+                    ><li class="navigation-active" >
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         </header>
         <main>
             <div class="container">
@@ -41,11 +38,11 @@
                         <div class="facilities-inner">
                             <h4 class="filter-form-title">Инфраструктура</h4>
                             <div class="field">
-                                <input type="checkbox" name="pool" id="pool" checked>
+                                <input  type="checkbox" name="pool" id="pool" checked>
                                 <label for="pool"> Бассейн</label>
                             </div>
                             <div class="field">
-                                <input type="checkbox" name="parking"  id="parking" >
+                                <input  type="checkbox" name="parking"  id="parking" >
                                 <label for="parking">Парковка</label>
                             </div>
                             <div class="field">
@@ -71,7 +68,8 @@
                         <div class="filter-range">
                             <div class="filter-range-title">Стоимость в сутки (р):</div>
                             <div class="price-controls">
-                                <label class="min-price">от
+                                <label class="min-price">
+                                   от
                                     <input type="text" name="min-price" value="0">
                                 </label
                                 ><label class="max-price">до
@@ -93,15 +91,15 @@
                     <div class="catalogue-sorter">
                         <span class="total">Найдено: 3</span>
                         <span class="sorter">Сортировка:</span>
-                        <ul>
+                        <ul class="catalogue-sorter-result">
                             <li>
-                                <a class="no-active">По цене</a>
+                                <a class="active">По цене</a>
                             </li>
                             <li>
-                                <a class="active" href="#"> По типу</a>
+                                <a href="#"> По типу</a>
                             </li>
                             <li>
-                                <a class="active" href="#">По рейтингу</a>
+                                <a href="#">По рейтингу</a>
                             </li>
                         </ul>
                     </div>
@@ -116,23 +114,23 @@
                                     <a href="">
                                         <img src="img/hotel1.jpg" width="135" height="90" alt="Amara resort&spa">
                                     </a>
-                                </div
-                                ><div class="hotel-block-info">
+                                </div>
+                                   <div class="hotel-block-info">
                                     <h3 class="hotel-title"> Amara resort & spa</h3>
                                     <p class="block-price">
                                         <span class="type">Гостиница</span> <span>от 3500 р.</span>
                                     </p>
                                     <a class="hotel-btn-more" href="" >Подробнее</a>
                                     <a class="hotel-btn-book" href="">Забронировать</a>
-                                </div
-                                ><div class="hotel-block-rate">
+                                </div>
+                                   <div class="hotel-block-rate">
                                     <div class="raiting stars"></div>
                                     <div class="raiting stars"></div>
                                     <div class="raiting stars"></div>
                                     <div class="raiting stars"></div>
                                     <div class="rate"> Рейтинг: 8.5 </div>
-                                </div
-                                ></div>
+                                </div>
+                                </div>
                         </article>
                         <article class="hotel clearfix">
                             <div class="hotel-block">
@@ -140,8 +138,8 @@
                                     <a href="">
                                         <img src="img/hotel2.jpg" width="135" height="90" alt="Desert quail inn">
                                     </a>
-                                </div
-                                ><div class="hotel-block-info">
+                                </div>
+                                   <div class="hotel-block-info">
                                     <h3 class="hotel-title">Desert quail inn</h3>
                                     <p class="block-price">
                                         <span class="type">Мотель</span> <span>от 2000 р.</span>
@@ -153,16 +151,16 @@
                                  <div class="raiting stars"></div>
                                  <div class="raiting stars"></div>
                                  <div class="rate"> Рейтинг: 8.9</div>
-                            </div
-                            ></div>
+                            </div>
+                            </div>
                         </article>
                         <article class="hotel clearfix">
                             <div class="hotel-block">
                                 <div class="hotel-block-photo ">
                                     <a href="">
                                         <img src="img/hotel3.jpg" width="135" height="90" alt="Villas at poco diablo">
-                                    </a
-                                ></div>
+                                    </a>
+                                    </div>
                                 <div class="hotel-block-info">
                                     <h3 class="hotel-title">Villas at poco diablo</h3>
                                     <p class="block-price">
@@ -171,14 +169,13 @@
                                     </p>
                                     <a class="hotel-btn-more" href="" >Подробнее</a>
                                     <a class="hotel-btn-book" href="">Забронировать</a>
-                                </div
-                                ><div class="hotel-block-rate">
+                                </div><div class="hotel-block-rate">
                                     <div class="raiting stars"></div>
                                      <div class="raiting stars"></div>
                                   <div class="raiting stars"></div>
                                   <div class="rate"> Рейтинг: 8.2</div>
-                                </div
-                            ></div>
+                                </div>
+                                </div>
                         </article>
                     </div>
                 </section>
@@ -195,7 +192,7 @@
                     <a class="social-btn social-btn-you" href="#">Youtube</a>
                 </div>
                 <div class="footer-copyright">
-                    <span class="extra">Website by:</span>
+                    <span class="extra">Website by</span>
                     <a class="copyright btn-logo" href="https://htmlacademy.ru"></a>
                 </div>
             </div>
